@@ -58,9 +58,11 @@ configuration ConfigSFCI
     [System.Management.Automation.PSCredential]$ServiceCreds = New-Object System.Management.Automation.PSCredential ("${DomainNetbiosName}\$($svcCreds.UserName)", $svcCreds.Password)
     [System.Management.Automation.PSCredential]$ServiceFQDNCreds = New-Object System.Management.Automation.PSCredential ("${DomainName}\$($svcCreds.UserName)", $svcCreds.Password)
     
-    [System.Collections.ArrayList]$Nodes=@()
+     
+     $Nodes = New-Object System.Collections.ArrayList
      $Nodes.Add($vmNamePrefix1)
      $Nodes.Add($vmNamePrefix2)
+     $a
     
     Node localhost
     {
