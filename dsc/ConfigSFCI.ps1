@@ -62,7 +62,7 @@ configuration ConfigSFCI
      $Nodes = New-Object System.Collections.ArrayList
      $Nodes.Add($vmNamePrefix1)
      $Nodes.Add($vmNamePrefix2)
-     $a
+     
     
     Node localhost
     {
