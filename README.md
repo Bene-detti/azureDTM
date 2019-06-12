@@ -1,1 +1,1 @@
-# azureDTM
+# ClusterSQLScriptAZ
